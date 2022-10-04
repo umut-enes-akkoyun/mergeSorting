@@ -4,19 +4,19 @@ def sortingMerge(list_1, list_2):
     while(len(list_1) > 0 and len(list_2) > 0):
         if(list_1[0] > list_2[0]):
             list_3.append(list_2[0])
-            del list_2
+            del list_2[0]
         
         else:
             list_3.append(list_1[0])
-            del list_1
+            del list_1[0]
 
     while( len(list_1) > 0):
         list_3.append(list_1[0])
-        del list_1
+        del list_1[0]
 
     while( len(list_2) > 0):
         list_3.append(list_2[0])
-        del list_2
+        del list_2[0]
 
     return list_3
 
